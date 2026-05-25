@@ -1,0 +1,5 @@
+{
+  "name": "PuhdasPutki Oy - Moderni LVI-palvelu",
+  "description": "Nykyaikaiset LVI-ratkaisut Espoossa ja Uudellamaalla. Läpinäkyvä hinnoittelu, nopea palvelu ja aito asiakaslähtöisyys.",
+  "requestFramePermissions": ["geolocation"]
+}

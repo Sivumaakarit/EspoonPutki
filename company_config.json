@@ -1,0 +1,41 @@
+{
+  "company": {
+    "name": "Espoon Putki & Saneeraus",
+    "legalName": "Espoon Putki & Saneeraus Oy",
+    "yTunnus": "3502206-6",
+    "logoUrl": "images/logo.png",
+    "faviconUrl": "images/favicon.ico",
+    "tagline": "Kattavat LVI- ja saneerauspalvelut Espoossa ja Uudellamaalla"
+  },
+  "branding": {
+    "colors": {
+      "primary": "#0B1530",
+      "accent": "#00E5FF",
+      "accentRgb": "0, 229, 255"
+    }
+  },
+  "contact": {
+    "markku": {
+      "name": "Markku Määttälä",
+      "phone": "050 554 6665",
+      "role": "Putkityöt & Päivystys",
+      "email": "markku.maattala@espoonputki.fi"
+    },
+    "jani": {
+      "name": "Jani Kemppainen",
+      "phone": "040 099 6843",
+      "role": "Saneeraukset & Remontit",
+      "email": "asiakaspalvelu@espoonputki.fi"
+    },
+    "generalEmail": "asiakaspalvelu@espoonputki.fi",
+    "address": "Viherlaaksonranta 10 F 79 Talli e 4, 02710 Espoo",
+    "serviceArea": "Espoo, Helsinki, Vantaa",
+    "certificate": "C-24108-23-18"
+  },
+  "socialProof": {
+    "google": {
+      "rating": "",
+      "count": ""
+    }
+  }
+}

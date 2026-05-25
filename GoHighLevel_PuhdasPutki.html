@@ -1,0 +1,1087 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">Yritys | Laadukas LVI-huolto</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        :root {
+            --brand-blue: #0A2540;
+            --brand-accent: #10B981;
+            --brand-accent-rgb: 16, 185, 129;
+        }
+
+        .bg-brand-blue {
+            background-color: var(--brand-blue);
+        }
+
+        .text-brand-blue {
+            color: var(--brand-blue);
+        }
+
+        .border-brand-blue {
+            border-color: var(--brand-blue);
+        }
+
+        .from-brand-blue {
+            --tw-gradient-from: var(--brand-blue);
+            --tw-gradient-to: rgb(10 37 64 / 0);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+        }
+
+        .via-brand-blue\/60 {
+            --tw-gradient-to: rgb(10 37 64 / 0.6);
+            --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to), var(--tw-gradient-to);
+        }
+
+        .bg-brand-accent {
+            background-color: var(--brand-accent);
+        }
+
+        .text-brand-accent {
+            color: var(--brand-accent);
+        }
+
+        .border-brand-accent {
+            border-color: var(--brand-accent);
+        }
+
+        .bg-brand-accent\/10 {
+            background-color: rgba(var(--brand-accent-rgb), 0.1);
+        }
+
+        .bg-brand-accent\/80 {
+            background-color: rgba(var(--brand-accent-rgb), 0.8);
+        }
+
+        .accent-brand-accent {
+            accent-color: var(--brand-accent);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Outfit', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0A2540',
+                            accent: '#10b981',
+                            emerald: '#059669',
+                            light: '#f8fafc',
+                        },
+                        emergency: '#ef4444',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style type="text/tailwindcss">
+        @layer base {
+            html {
+                scroll-behavior: smooth;
+            }
+            body {
+                @apply text-brand-blue bg-brand-light antialiased;
+            }
+            h1, h2, h3, h4 {
+                @apply font-display tracking-tight text-brand-blue;
+            }
+        }
+        
+        @layer components {
+            .section-padding {
+                @apply py-24 px-6 max-w-7xl mx-auto;
+            }
+            
+            .glass-nav {
+                @apply bg-white/70 backdrop-blur-xl border-b border-slate-200/50 sticky top-0 z-50 transition-all duration-300;
+            }
+            
+            .btn-primary {
+                @apply bg-brand-accent hover:bg-brand-emerald text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 shadow-xl shadow-brand-accent/20 hover:shadow-brand-accent/40 active:scale-95 flex items-center justify-center gap-3 cursor-pointer hover:-translate-y-0.5;
+            }
+            
+            .btn-secondary {
+                @apply bg-brand-blue/10 backdrop-blur-md border border-brand-blue/20 text-brand-blue hover:bg-brand-blue hover:text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 active:scale-95 flex items-center justify-center gap-3 cursor-pointer hover:-translate-y-0.5;
+            }
+
+            .btn-hero-secondary {
+                @apply bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white hover:text-brand-blue px-8 py-4 rounded-2xl font-bold transition-all duration-300 active:scale-95 flex items-center justify-center gap-3 cursor-pointer hover:-translate-y-0.5;
+            }
+            
+            .card-premium {
+                @apply bg-white border border-slate-100 rounded-[2rem] p-8 shadow-sm hover:shadow-2xl hover:shadow-slate-200 transition-all duration-500 hover:-translate-y-2;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="bg-brand-blue text-white py-2 px-6 text-sm hidden md:block">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <div class="flex gap-6">
+                <a href="tel:+358401234567"
+                    class="flex items-center gap-2 text-brand-accent font-bold hover:text-white transition-colors contact-phone">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.25-2.25a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    040 123 4567
+                </a>
+                <div class="flex items-center gap-2 text-brand-accent font-bold response-time">
+                    <div class="relative flex h-2 w-2">
+                        <span
+                            class="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-accent opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-brand-accent"></span>
+                    </div>
+                    VASTAAMME NYT: <span class="text-white ml-1 response-time-value">~15 MIN</span>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <div
+                    class="flex items-center gap-2 text-[10px] font-black uppercase tracking-widest bg-brand-accent/20 px-2 py-0.5 rounded border border-brand-accent/30 response-time-guarantee">
+                    2H VASTAUSTAKUU
+                </div>
+                <div class="flex items-center gap-2 service-area">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" />
+                        <circle cx="12" cy="10" r="3" />
+                    </svg>
+                    Helsinki, Espoo, Vantaa
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-nav py-4">
+        <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-2 group" id="nav-logo-link">
+                <div id="nav-logo-container"
+                    class="w-10 h-10 bg-brand-blue rounded-xl flex items-center justify-center text-white shadow-lg group-hover:scale-105 transition-transform">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                </div>
+                <span class="text-2xl font-black tracking-tighter text-brand-blue" id="nav-brand-name">Yritys</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8">
+                <a href="#palvelut" class="font-medium hover:text-brand-accent transition-colors">Palvelut</a>
+                <a href="#hinnasto" class="font-medium hover:text-brand-accent transition-colors">Hinnasto</a>
+                <a href="#meista" class="font-medium hover:text-brand-accent transition-colors">Meistä</a>
+                <a href="#yhteys" class="btn-primary py-2 px-5 text-sm">Pyydä tarjous</a>
+            </div>
+
+            <!-- Mobile Menu Toggle (Simplified for HTML version) -->
+            <button class="md:hidden p-2 text-brand-blue">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12" />
+                    <line x1="4" x2="20" y1="6" y2="6" />
+                    <line x1="4" x2="20" y1="18" y2="18" />
+                </svg>
+            </button>
+            <!-- Mobile Nav (Hidden by default) -->
+            <div id="mobile-menu"
+                class="hidden md:hidden absolute top-full left-0 w-full bg-white border-b border-slate-100 p-6 flex flex-col gap-4 shadow-xl z-50">
+                <a href="#palvelut" class="text-lg font-medium">Palvelut</a>
+                <a href="#hinnasto" class="text-lg font-medium">Hinnasto</a>
+                <a href="#meista" class="text-lg font-medium">Meistä</a>
+                <a href="#yhteys" class="btn-primary w-full">Pyydä tarjous</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-[85vh] flex items-center overflow-hidden bg-brand-blue">
+            <div id="toast"
+                class="fixed bottom-32 md:bottom-12 left-1/2 -translate-x-1/2 z-[100] bg-brand-blue text-white px-6 py-4 rounded-2xl shadow-2xl flex items-center gap-3 border border-white/10 backdrop-blur-xl transition-all duration-300 opacity-0 translate-y-10 pointer-events-none">
+                <div class="bg-emerald-500 p-1 rounded-full text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="20 6 9 17 4 12" />
+                    </svg>
+                </div>
+                <span class="font-bold">Viesti lähetetty! Palaamme pian.</span>
+            </div>
+
+            <div class="absolute inset-0 z-0">
+                <img src="images/hero.png" alt="Hero" class="w-full h-full object-cover opacity-50 scale-105">
+                <div class="absolute inset-0 bg-gradient-to-r from-brand-blue via-brand-blue/60 to-transparent"></div>
+            </div>
+
+            <div class="section-padding relative z-10 w-full text-white">
+                <div class="max-w-2xl">
+                    <div
+                        class="flex items-center gap-2 mb-6 bg-white/10 backdrop-blur-sm w-fit px-4 py-1 rounded-full border border-white/20">
+                        <div class="flex text-yellow-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                        </div>
+                        <span class="text-sm font-medium ml-1 google-count">5.0 | 50+ Google-arvostelua</span>
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-6 text-white" id="hero-title">
+                        Säästä jopa <span class="text-brand-accent font-display tracking-tight"
+                            id="hero-accent-text">1000 €</span> vuodessa.
+                    </h1>
+                    <p class="text-xl text-slate-300 mb-10 leading-relaxed max-w-lg" id="hero-description">
+                        Lopeta rahan puhaltaminen harakanpesään. Nykyaikainen ilmalämpöpumppu säästää itsensä takaisin
+                        jopa kahdessa vuodessa.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#yhteys" class="btn-primary text-lg px-8">Pyydä maksuton arvio</a>
+                        <a href="#hinnasto" class="btn-hero-secondary text-lg px-8">Katso hinnasto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Section -->
+        <section id="palvelut" class="section-padding">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-brand-accent uppercase tracking-widest mb-3">Palvelumme</h2>
+                <h3 class="text-4xl md:text-5xl font-bold mb-6">Kattavat LVI-ratkaisut kotiisi</h3>
+                <p class="text-slate-600 max-w-2xl mx-auto text-lg leading-relaxed">
+                    Alan uusinta osaamista ja tekniikkaa, jotta kotisi tekniikka toimii moitteettomasti vuoden ympäri.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Ilmalämpöpumput -->
+                <div
+                    class="h-full bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
+                    <div
+                        class="w-14 h-14 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 4v10.54a4 4 0 1 1-4 0V4a2 2 0 0 1 4 0Z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Ilmalämpöpumput</h4>
+                    <p class="text-slate-600 mb-6">Asennus, huolto ja myynti. Säästä energiaa ja paranna
+                        asumismukavuutta.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-xs font-semibold bg-slate-100 text-slate-500 px-3 py-1 rounded-full uppercase tracking-widest">Asennus</span>
+                        <span
+                            class="text-xs font-semibold bg-slate-100 text-slate-500 px-3 py-1 rounded-full uppercase tracking-widest">Huolto</span>
+                    </div>
+                </div>
+
+                <!-- Ilmanvaihto -->
+                <div
+                    class="h-full bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
+                    <div
+                        class="w-14 h-14 bg-emerald-50 text-emerald-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M11 12h2" />
+                            <path d="M17.4 10.6c.2-.3.4-.6.6-1a10 10 0 1 0-8 8" />
+                            <path d="M22 12a10 10 0 0 1-5.6 9.1" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Ilmanvaihto</h4>
+                    <p class="text-slate-600 mb-6">Puhdistus, säätö ja huolto. Puhdas sisäilma on terveyden perusta.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-xs font-semibold bg-slate-100 text-slate-500 px-3 py-1 rounded-full uppercase tracking-widest">Puhdistus</span>
+                        <span
+                            class="text-xs font-semibold bg-slate-100 text-slate-500 px-3 py-1 rounded-full uppercase tracking-widest">Säätö</span>
+                    </div>
+                </div>
+
+                <!-- Putkityöt -->
+                <div
+                    class="h-full bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
+                    <div
+                        class="w-14 h-14 bg-slate-50 text-slate-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-3.5-6.5c0 2.5-1.5 4.9-3.5 6.5S6 13 6 15a7 7 0 0 0 7 7z" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Putkityöt & LVI</h4>
+                    <p class="text-slate-600 mb-6">Kaikki kodin putkityöt hanan vaihdosta suurempiin saneerauksiin.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-xs font-semibold bg-slate-100 text-slate-500 px-3 py-1 rounded-full uppercase tracking-widest">Hana</span>
+                        <span
+                            class="text-xs font-semibold bg-slate-100 text-slate-500 px-3 py-1 rounded-full uppercase tracking-widest">Viemäri</span>
+                    </div>
+                </div>
+
+                <!-- Päivystys -->
+                <div
+                    class="h-full bg-white p-8 rounded-[2rem] shadow-sm border border-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group">
+                    <div
+                        class="w-14 h-14 bg-red-50 text-red-600 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand-accent group-hover:text-white transition-colors duration-300">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10" />
+                            <polyline points="12 6 12 12 16 14" />
+                        </svg>
+                    </div>
+                    <h4 class="text-xl font-bold mb-4">Päivystys 24/7</h4>
+                    <p class="text-slate-600 mb-6">Hätätilanteet eivät odota. Olemme paikalla kun tarve on suurin.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span
+                            class="text-xs font-semibold bg-red-100 text-red-600 px-3 py-1 rounded-full uppercase tracking-widest">Heti
+                            apua</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Proof Section -->
+        <section class="section-padding bg-white overflow-hidden border-t border-slate-100">
+            <div class="grid lg:grid-cols-[1.2fr_0.8fr] gap-16 items-center">
+                <div class="order-2 lg:order-1">
+                    <h2 class="text-sm font-bold text-brand-accent uppercase tracking-widest mb-3">Laatutakuu
+                        käytännössä</h2>
+                    <h3 class="text-4xl font-bold mb-6">Emme vain lupaa laatua – me näytämme sen.</h3>
+                    <p class="text-slate-600 text-lg mb-8 leading-relaxed">
+                        Alla oleva kuva kertoo enemmän kuin tuhat sanaa. Vasemmalla tyypillinen saneerauskohde ennen
+                        työtämme, oikealla laadukas asennus. Panostamme siisteyteen, turvallisuuteen ja tekniseen
+                        kestävyyteen.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <div class="text-brand-accent font-bold text-2xl mb-1">100%</div>
+                            <div class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Vakuutettu työ
+                            </div>
+                        </div>
+                        <div class="bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                            <div class="text-brand-accent font-bold text-2xl mb-1">5 v.</div>
+                            <div class="text-[10px] text-slate-500 font-bold uppercase tracking-widest">Asennustakuu
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="order-1 lg:order-2 relative flex justify-center lg:justify-end">
+                    <div class="rounded-[2.5rem] overflow-hidden shadow-2xl border-8 border-white max-w-sm lg:max-w-md">
+                        <img src="images/before_after.png" alt="Before and After" class="w-full h-full object-cover">
+                    </div>
+                    <div class="absolute top-4 left-4 bg-black/60 backdrop-blur-md text-white px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest"
+                        id="label-before">Ennen</div>
+                    <div class="absolute top-4 right-4 bg-brand-accent/80 backdrop-blur-md text-white px-4 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest"
+                        id="label-after">Jälkeen</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Entrepreneur Section -->
+        <section id="meista" class="section-padding grid lg:grid-cols-2 gap-16 items-center border-t border-slate-100">
+            <div>
+                <h2 class="text-sm font-bold text-brand-accent uppercase tracking-widest mb-3" id="about-title-tag">
+                    Yrittäjän sana</h2>
+                <h3 class="text-4xl font-bold mb-6 text-brand-blue" id="about-subtitle">"Haluamme tehdä asiat paremmin"
+                </h3>
+                <div id="about-paragraphs" class="space-y-4 text-slate-600 text-lg leading-relaxed">
+                    <!-- Sisältö täytetään CONFIG-objektista -->
+                </div>
+                <div class="pt-6">
+                    <div class="font-bold text-brand-blue text-xl" id="about-owner-name">Antti Asentaja</div>
+                    <div class="text-sm text-slate-500 font-bold uppercase tracking-widest" id="about-owner-title">
+                        Toimitusjohtaja & Perustaja</div>
+                </div>
+            </div>
+            <div class="relative">
+                <img id="about-image" src="images/owner.png" alt="Entrepreneur"
+                    class="rounded-3xl shadow-2xl w-full object-cover aspect-[3/2] border-4 border-white">
+                <div class="absolute -bottom-6 -left-6 bg-brand-accent text-white p-6 rounded-2xl shadow-xl">
+                    <div class="text-3xl font-bold" id="about-experience">15+</div>
+                    <div class="text-sm font-bold uppercase tracking-widest">Vuoden kokemus</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Savings Section -->
+        <section class="bg-brand-blue text-white py-24 relative overflow-hidden">
+            <div class="max-w-7xl mx-auto px-6 relative z-10">
+                <div class="grid lg:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-brand-accent font-bold uppercase tracking-widest mb-3">Säästölaskuri</h2>
+                        <h3 class="text-4xl font-bold mb-6">Paljonko säästäisit ilmalämpöpumpulla?</h3>
+                        <p class="text-slate-300 text-lg mb-8 leading-relaxed">
+                            Nykyaikainen ilmalämpöpumppu voi laskea lämmityskustannuksiasi jopa 40-60%. Voit säästää
+                            jopa yli 1000 € vuodessa.
+                        </p>
+
+                        <!-- Interactive Calculator -->
+                        <div
+                            class="bg-white/5 p-8 rounded-[2rem] border border-white/10 backdrop-blur-md space-y-6 relative overflow-hidden">
+                            <div id="calc-loader"
+                                class="absolute inset-0 bg-brand-blue/40 backdrop-blur-md z-20 flex items-center justify-center opacity-0 pointer-events-none transition-opacity duration-300">
+                                <div class="flex flex-col items-center gap-3">
+                                    <div
+                                        class="w-10 h-10 border-4 border-emerald-500/30 border-t-emerald-500 rounded-full animate-spin">
+                                    </div>
+                                    <span
+                                        class="text-sm font-bold text-emerald-400 uppercase tracking-widest text-[10px]">Lasketaan...</span>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-between items-end">
+                                <label
+                                    class="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Vuosikulutus
+                                    (kWh)</label>
+                                <span class="text-3xl font-bold text-brand-accent"><span id="consumption-val">15
+                                        000</span> <span class="text-lg opacity-60">kWh</span></span>
+                            </div>
+
+                            <input type="range" id="consumption-slider" min="2000" max="35000" step="100" value="15000"
+                                class="w-full h-2 bg-white/10 rounded-full appearance-none cursor-pointer accent-brand-accent">
+
+                            <div class="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
+                                <div>
+                                    <div class="text-[10px] font-bold text-slate-400 uppercase tracking-widest mb-1">
+                                        Nykyinen kulu</div>
+                                    <div class="text-lg font-bold"><span id="current-cost">2 250</span> € / v</div>
+                                </div>
+                                <div class="text-right">
+                                    <div class="text-[10px] font-bold text-brand-accent uppercase tracking-widest mb-1">
+                                        Uusi arvio</div>
+                                    <div class="text-lg font-bold text-brand-accent"><span id="new-cost">900</span> -
+                                        <span id="new-cost-max">1 350</span> €
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="pt-6 border-t border-white/10 flex justify-between items-center">
+                                <div class="text-sm font-bold uppercase tracking-widest text-slate-400">Arvioitu säästö:
+                                </div>
+                                <div class="text-4xl font-bold text-brand-accent"><span id="savings-val">900 - 1
+                                        350</span> €</div>
+                            </div>
+
+                            <div class="bg-brand-accent/10 p-4 rounded-2xl border border-brand-accent/20">
+                                <div class="text-[10px] font-bold text-brand-accent uppercase tracking-widest mb-1">
+                                    Takaisinmaksuaika</div>
+                                <div class="text-2xl font-bold text-white"><span id="payback-val">2,0</span> vuotta
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="hidden lg:block relative">
+                        <img src="images/house_heatpump.png" alt="House"
+                            class="rounded-[2rem] border-8 border-white/5 shadow-2xl w-full h-auto object-cover">
+                        <div class="absolute -bottom-6 -right-6 bg-brand-accent p-6 rounded-2xl shadow-xl">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-white" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <path d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing Section -->
+        <section id="hinnasto" class="section-padding bg-slate-50">
+            <div class="text-center mb-16">
+                <h2 class="text-sm font-bold text-brand-accent uppercase tracking-widest mb-3">Hinnasto</h2>
+                <h3 class="text-4xl md:text-5xl font-bold mb-6">Selkeä ja reilu hinnoittelu</h3>
+                <p class="text-slate-600 max-w-2xl mx-auto text-lg">
+                    Uskomme, että rehellisyys on parasta asiakaspalvelua. Tässä yleisimmät palvelumme ja niiden hinnat.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Basic -->
+                <div
+                    class="bg-white border border-slate-200 rounded-[2.5rem] p-8 flex flex-col shadow-sm transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <h4 class="text-xl font-bold mb-2">Pumppuhuolto</h4>
+                    <div class="text-3xl font-bold text-brand-blue mb-6">189 € <span
+                            class="text-sm font-normal text-slate-400 uppercase tracking-widest ml-1 italic">sis.
+                            alv</span></div>
+                    <ul class="space-y-4 mb-8 flex-grow text-slate-600">
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Sisäyksikön pesu</li>
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Ulkoyksikön tarkistus</li>
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Toiminnan testaus</li>
+                    </ul>
+                    <a href="#yhteys" class="btn-secondary w-full text-sm">Varaa tästä</a>
+                </div>
+
+                <!-- IV -->
+                <div
+                    class="bg-white border-4 border-brand-accent rounded-[2.5rem] p-8 flex flex-col shadow-2xl transform scale-105 z-10">
+                    <div
+                        class="bg-brand-accent text-white px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.2em] w-fit -mt-12 mx-auto mb-6 shadow-lg">
+                        Suosituin</div>
+                    <h4 class="text-xl font-bold mb-2">IV-puhdistus</h4>
+                    <div class="text-3xl font-bold text-brand-blue mb-6">alk. 390 € <span
+                            class="text-sm font-normal text-slate-400 uppercase tracking-widest ml-1 italic">sis.
+                            alv</span></div>
+                    <ul class="space-y-4 mb-8 flex-grow text-slate-600">
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Kanavien harjaus</li>
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Koneen puhdistus</li>
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Ilmamäärien säätö</li>
+                    </ul>
+                    <a href="#yhteys" class="btn-primary w-full text-sm">Varaa tästä</a>
+                </div>
+
+                <!-- LVI -->
+                <div
+                    class="bg-white border border-slate-200 rounded-[2.5rem] p-8 flex flex-col shadow-sm transition-all duration-300 hover:shadow-2xl hover:-translate-y-2">
+                    <h4 class="text-xl font-bold mb-2">Putkimies</h4>
+                    <div class="text-3xl font-bold text-brand-blue mb-6">78 € / h <span
+                            class="text-sm font-normal text-slate-400 uppercase tracking-widest ml-1 italic">sis.
+                            alv</span></div>
+                    <ul class="space-y-4 mb-8 flex-grow text-slate-600">
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Ammattitaitoinen työ</li>
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Nykyaikaiset välineet</li>
+                        <li class="flex items-center gap-2"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                height="16" viewBox="0 0 24 24" fill="none" stroke="#10b981" stroke-width="3"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg> Kirjallinen raportti</li>
+                    </ul>
+                    <a href="#yhteys" class="btn-secondary w-full text-sm">Varaa tästä</a>
+                </div>
+            </div>
+
+            <div class="mt-16 grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-brand-accent/5 p-8 rounded-[2rem] border border-brand-accent/10">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="bg-brand-accent text-white p-2 rounded-lg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                            </svg>
+                        </div>
+                        <h4 class="text-xl font-bold">Kotitalousvähennys -35%</h4>
+                    </div>
+                    <p class="text-slate-600 mb-4">Muista hyödyntää kotitalousvähennys työn osuudesta! Vuonna 2026 voit
+                        vähentää jopa 35 % työn hinnasta verotuksessasi.</p>
+                </div>
+                <div class="bg-slate-100 p-8 rounded-[2rem] border border-slate-200">
+                    <h4 class="text-xl font-bold mb-4">Muut veloitukset</h4>
+                    <ul class="space-y-4 text-slate-600 font-medium">
+                        <li class="flex justify-between"><span>Huoltoautomaksu</span> <span
+                                class="font-bold text-brand-blue">45 €</span></li>
+                        <li class="flex justify-between"><span>Patterin vaihto alk.</span> <span
+                                class="font-bold text-brand-blue">120 €</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="bg-white py-24 border-t border-slate-100">
+            <div class="section-padding">
+                <div class="text-center mb-16">
+                    <h2 class="text-sm font-bold text-brand-accent uppercase tracking-widest mb-3">Usein kysyttyä</h2>
+                    <h3 class="text-4xl font-bold">Asiantuntijan vastaukset</h3>
+                </div>
+                <div class="max-w-3xl mx-auto space-y-4">
+                    <!-- Q1 -->
+                    <div class="faq-item bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+                        <button
+                            class="w-full p-6 text-left flex justify-between items-center hover:bg-slate-100 transition-all duration-300">
+                            <h4 class="text-lg font-bold flex items-center gap-3">
+                                <span class="text-brand-accent">Q:</span> Mitä tehdä, jos putki vuotaa?
+                            </h4>
+                            <svg class="chevron transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-200/50">
+                                <span class="font-bold text-brand-blue">A:</span> Sulje välittömästi asunnon
+                                päävesihana. Jos kyseessä on kerrostalo, ota yhteys huoltoyhtiöön. Soita sitten
+                                päivystysnumeroomme 040 123 4567 – olemme paikalla nopeasti.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q2 -->
+                    <div class="faq-item bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+                        <button
+                            class="w-full p-6 text-left flex justify-between items-center hover:bg-slate-100 transition-all duration-300">
+                            <h4 class="text-lg font-bold flex items-center gap-3">
+                                <span class="text-brand-accent">Q:</span> Kuinka usein ilmalämpöpumppu tulisi huoltaa?
+                            </h4>
+                            <svg class="chevron transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-200/50">
+                                <span class="font-bold text-brand-blue">A:</span> Suosittelemme ammattilaishuoltoa 2-3
+                                vuoden välein. Suodattimet kannattaa kuitenkin imuroida itse vähintään kerran
+                                kuukaudessa parhaan hyödyn varmistamiseksi.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Q3 -->
+                    <div class="faq-item bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden">
+                        <button
+                            class="w-full p-6 text-left flex justify-between items-center hover:bg-slate-100 transition-all duration-300">
+                            <h4 class="text-lg font-bold flex items-center gap-3">
+                                <span class="text-brand-accent">Q:</span> Miten kotitalousvähennys haetaan?
+                            </h4>
+                            <svg class="chevron transition-transform duration-300" xmlns="http://www.w3.org/2000/svg"
+                                width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="9 18 15 12 9 6" />
+                            </svg>
+                        </button>
+                        <div class="faq-answer max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="p-6 pt-0 text-slate-600 leading-relaxed border-t border-slate-200/50">
+                                <span class="font-bold text-brand-blue">A:</span> Me toimitamme sinulle laskun, jossa
+                                työn osuus on eritelty selkeästi. Voit ilmoittaa nämä tiedot suoraan OmaVero-palvelussa.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA / Contact -->
+        <section id="yhteys" class="section-padding">
+            <div class="bg-brand-blue rounded-[3rem] overflow-hidden shadow-2xl relative">
+                <div class="grid lg:grid-cols-2">
+                    <div class="p-12 md:p-16 text-white">
+                        <h3 class="text-4xl font-bold mb-6 font-display tracking-tight text-white">Ota yhteyttä heti
+                        </h3>
+                        <p class="text-slate-300 mb-10 text-lg leading-relaxed company-tagline">
+                            Jätä viesti alta, niin palaamme asiaan viimeistään seuraavana arkipäivänä. Hätätapauksissa
+                            soita suoraan päivystykseen.
+                        </p>
+
+                        <div class="space-y-8">
+                            <div class="flex gap-6 items-center group cursor-pointer contact-phone">
+                                <div
+                                    class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-brand-accent group-hover:bg-brand-accent group-hover:text-white transition-all duration-300">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l2.25-2.25a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                                    </svg>
+                                </div>
+                                <div class="text-2xl font-bold">040 123 4567</div>
+                            </div>
+                            <div class="flex gap-6 items-center contact-email">
+                                <div
+                                    class="w-14 h-14 bg-white/10 rounded-2xl flex items-center justify-center text-brand-accent">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <rect width="20" height="16" x="2" y="4" rx="2" />
+                                        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                                    </svg>
+                                </div>
+                                <div class="text-xl font-bold"><span class="contact-email">info@yritys.fi</span></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white p-12 md:p-16">
+                        <form class="space-y-6">
+                            <div class="grid md:grid-cols-2 gap-6">
+                                <div class="space-y-2">
+                                    <label
+                                        class="text-[10px] font-black uppercase tracking-widest text-slate-400">Nimi</label>
+                                    <input type="text"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-accent outline-none"
+                                        placeholder="Matti Meikäläinen">
+                                </div>
+                                <div class="space-y-2">
+                                    <label
+                                        class="text-[10px] font-black uppercase tracking-widest text-slate-400">Puhelin</label>
+                                    <input type="tel"
+                                        class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-accent outline-none"
+                                        placeholder="040 123 4567">
+                                </div>
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="text-[10px] font-black uppercase tracking-widest text-slate-400">Palvelu</label>
+                                <select
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-accent outline-none bg-white">
+                                    <option>Ilmalämpöpumppu</option>
+                                    <option>Ilmanvaihto</option>
+                                    <option>Putkityöt</option>
+                                    <option>Jokin muu</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2">
+                                <label
+                                    class="text-[10px] font-black uppercase tracking-widest text-slate-400">Viesti</label>
+                                <textarea rows="4"
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-200 focus:border-brand-accent outline-none"
+                                    placeholder="Kerro mihin tarvitset apua..."></textarea>
+                            </div>
+                            <button type="submit"
+                                class="btn-primary w-full py-4 uppercase tracking-[0.2em] shadow-2xl">Lähetä
+                                pyyntö</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-slate-100 py-12 px-6 border-t border-slate-200">
+        <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
+            <div class="flex items-center gap-2">
+                <div class="bg-brand-blue p-2 rounded-lg text-white">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a2 2 0 0 1-2.83-2.83l-3.94 3.6ZM6.3 14.7a1 1 0 0 0 1.4 0l1.6-1.6a1 1 0 0 0 0-1.4l-3.77-3.77a2 2 0 0 0-2.83 2.83l3.6 3.94ZM16.4 16.4l3.9 3.9a2 2 0 1 1-2.8 2.8l-3.9-3.9M9.1 9.1l-3.9-3.9a2 2 0 1 0-2.8 2.8l3.9 3.9" />
+                    </svg>
+                </div>
+                <span class="text-xl font-bold font-display footer-company-name">Yritys</span>
+            </div>
+            <div class="text-slate-500 text-sm font-medium">© 2026 <span class="footer-company-name">Yritys</span> |
+                Kaikki oikeudet pidätetään.</div>
+            <div class="flex gap-6">
+                <a href="#"
+                    class="text-brand-blue hover:text-brand-accent font-bold uppercase tracking-widest text-[10px]">Tietosuoja</a>
+                <a href="#"
+                    class="text-brand-blue hover:text-brand-accent font-bold uppercase tracking-widest text-[10px]">Ehdot</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // --- CLONE ENGINE CONFIG ---
+        const CONFIG = {
+            company: {
+                name: "Bergin Putki",
+                legalName: "Bergin Putki Oy",
+                yTunnus: "2570110-1",
+                tagline: "Luotettavaa LVI-urakointia ja huoltoa Espoossa."
+            },
+            branding: {
+                primary: "#0A2540",
+                accent: "#10B981",
+                accentRgb: "16, 185, 129",
+                logo: null // Set to SVG string or image URL
+            },
+            contact: {
+                phone: "+358 45 2570110",
+                email: "huolto@berginputki.fi",
+                serviceArea: "Espoo ja lähialueet",
+                responseTime: "~30 MIN",
+                responseTimeGuarantee: "2H VASTAUSTAKUU"
+            },
+            hero: {
+                title: "Ammattitaitoinen LVI-huolto ",
+                accent: "Espoossa",
+                suffix: ".",
+                description: "Bergin Putki on paikallinen kumppanisi kaikissa putkitöissä. Säästä kuluissa ja paranna talosi energiatehokkuutta jo tänään."
+            },
+            socialProof: {
+                rating: "5.0",
+                reviews: "Uusi tyytyväinen asiakas joka päivä"
+            },
+            calculator: {
+                pumpCost: 2500,
+                electricityPrice: 0.18
+            },
+            about: {
+                title: "Yrittäjän sana",
+                subtitle: "\"Haluamme tehdä asiat paremmin\"",
+                paragraphs: [
+                    "Perustimme Bergin Putken, koska halusimme tarjota läpinäkyvää ja rehtiä palvelua ilman yllätyksiä.",
+                    "Meille jokainen asiakas on tärkeä. Seisomme työmme takana ja varmistamme, että laatu vastaa odotuksia."
+                ],
+                ownerName: "Antti Asentaja",
+                ownerTitle: "Toimitusjohtaja & Perustaja",
+                experience: "20+",
+                image: "images/owner.png"
+            }
+        };
+
+        const applyConfig = () => {
+            // Apply Branding Colors
+            const root = document.documentElement;
+            root.style.setProperty('--brand-blue', CONFIG.branding.primary);
+            root.style.setProperty('--brand-accent', CONFIG.branding.accent);
+            root.style.setProperty('--brand-accent-rgb', CONFIG.branding.accentRgb);
+
+            // Update Page Title
+            document.title = `${CONFIG.company.name} | ${CONFIG.company.tagline}`;
+
+            // Update Logo
+            if (CONFIG.branding.logo) {
+                const logoContainer = document.getElementById('nav-logo-container');
+                if (CONFIG.branding.logo.startsWith('<svg')) {
+                    logoContainer.innerHTML = CONFIG.branding.logo;
+                    // Ensure SVG fits
+                    const svg = logoContainer.querySelector('svg');
+                    if (svg) {
+                        svg.setAttribute('width', '24');
+                        svg.setAttribute('height', '24');
+                    }
+                } else {
+                    logoContainer.innerHTML = `<img src="${CONFIG.branding.logo}" alt="${CONFIG.company.name} Logo" class="w-6 h-6 object-contain">`;
+                }
+            }
+
+            // Global Text Updates
+            document.querySelectorAll('[id="nav-brand-name"]').forEach(el => el.innerText = CONFIG.company.name);
+            document.querySelectorAll('[id="hero-title"]').forEach(el => {
+                el.innerHTML = `${CONFIG.hero.title}<span class="text-brand-accent font-display tracking-tight" id="hero-accent-text">${CONFIG.hero.accent}</span>${CONFIG.hero.suffix}`;
+            });
+            document.querySelectorAll('[id="hero-description"]').forEach(el => el.innerText = CONFIG.hero.description);
+
+            // Stats & Proof
+            document.querySelectorAll('.google-count').forEach(el => el.innerText = `${CONFIG.socialProof.rating} | ${CONFIG.socialProof.reviews}`);
+
+            // Force dynamic styles for buttons and other elements that might have hardcoded classes
+            const dynamicStyles = document.createElement('style');
+            dynamicStyles.innerHTML = `
+                .btn-primary { background-color: var(--brand-accent) !important; color: white !important; }
+                .btn-primary:hover { filter: brightness(110%); }
+                .text-brand-accent { color: var(--brand-accent) !important; }
+                .bg-brand-accent { background-color: var(--brand-accent) !important; }
+                .border-brand-accent { border-color: var(--brand-accent) !important; }
+                .faq-item button:hover .text-brand-accent { color: var(--brand-accent) !important; }
+                input[type="range"]::-webkit-slider-thumb { background: var(--brand-accent) !important; }
+                input[type="range"]::-moz-range-thumb { background: var(--brand-accent) !important; }
+                .bg-brand-accent\\/20 { background-color: rgba(var(--brand-accent-rgb), 0.2) !important; }
+                .border-brand-accent\\/30 { border-color: rgba(var(--brand-accent-rgb), 0.3) !important; }
+            `;
+            document.head.appendChild(dynamicStyles);
+
+            // Footer & Company Info
+            document.querySelectorAll('.footer-company-name').forEach(el => el.innerText = CONFIG.company.legalName);
+            document.querySelectorAll('.company-y-tunnus').forEach(el => el.innerText = `Y-tunnus: ${CONFIG.company.yTunnus}`);
+            document.querySelectorAll('.contact-phone').forEach(el => el.innerText = CONFIG.contact.phone);
+            document.querySelectorAll('.contact-email').forEach(el => el.innerText = CONFIG.contact.email);
+            document.querySelectorAll('.service-area').forEach(el => el.innerText = CONFIG.contact.serviceArea);
+            document.querySelectorAll('.response-time-value').forEach(el => el.innerText = CONFIG.contact.responseTime);
+            document.querySelectorAll('.response-time-guarantee').forEach(el => el.innerText = CONFIG.contact.responseTimeGuarantee);
+            document.querySelectorAll('.company-tagline').forEach(el => el.innerText = CONFIG.company.tagline);
+
+            // About Section
+            if (CONFIG.about) {
+                document.querySelectorAll('[id="about-title-tag"]').forEach(el => el.innerText = CONFIG.about.title);
+                document.querySelectorAll('[id="about-subtitle"]').forEach(el => el.innerText = CONFIG.about.subtitle);
+                document.querySelectorAll('[id="about-owner-name"]').forEach(el => el.innerText = CONFIG.about.ownerName);
+                document.querySelectorAll('[id="about-owner-title"]').forEach(el => el.innerText = CONFIG.about.ownerTitle);
+                document.querySelectorAll('[id="about-experience"]').forEach(el => el.innerText = CONFIG.about.experience);
+                document.querySelectorAll('[id="about-image"]').forEach(el => el.src = CONFIG.about.image);
+
+                const pContainer = document.getElementById('about-paragraphs');
+                if (pContainer && CONFIG.about.paragraphs) {
+                    pContainer.innerHTML = CONFIG.about.paragraphs.map(p => `<p>${p}</p>`).join('');
+                }
+            }
+        };
+
+        // Mobile Menu Logic
+        const menuBtn = document.querySelector('button.md\\:hidden');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // FAQ Accordion Logic
+        const faqItems = document.querySelectorAll('.faq-item');
+
+        faqItems.forEach(item => {
+            const btn = item.querySelector('button');
+            const answer = item.querySelector('.faq-answer');
+            const chevron = item.querySelector('.chevron');
+
+            btn.addEventListener('click', () => {
+                const isOpen = answer.style.maxHeight !== '0px' && answer.style.maxHeight !== '';
+
+                // Close all others
+                faqItems.forEach(other => {
+                    other.querySelector('.faq-answer').style.maxHeight = '0px';
+                    other.querySelector('.chevron').style.transform = 'rotate(0deg)';
+                });
+
+                if (!isOpen) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    chevron.style.transform = 'rotate(90deg)';
+                }
+            });
+        });
+
+        // Calculator Logic
+        const slider = document.getElementById('consumption-slider');
+        const consumptionVal = document.getElementById('consumption-val');
+        const currentCost = document.getElementById('current-cost');
+        const newCost = document.getElementById('new-cost');
+        const newCostMax = document.getElementById('new-cost-max');
+        const savingsVal = document.getElementById('savings-val');
+        const paybackVal = document.getElementById('payback-val');
+        const loader = document.getElementById('calc-loader');
+
+        const calculate = () => {
+            const val = parseInt(slider.value);
+            consumptionVal.innerText = val.toLocaleString('fi-FI');
+
+            const electricityPrice = CONFIG.calculator.electricityPrice;
+            const pumpCost = CONFIG.calculator.pumpCost;
+            const current = val * electricityPrice;
+            const minSav = current * 0.4;
+            const maxSav = current * 0.6;
+            const avgSav = (minSav + maxSav) / 2;
+            const payback = pumpCost / avgSav;
+
+            currentCost.innerText = Math.round(current).toLocaleString('fi-FI');
+            newCost.innerText = Math.round(current - maxSav).toLocaleString('fi-FI');
+            newCostMax.innerText = Math.round(current - minSav).toLocaleString('fi-FI');
+            savingsVal.innerText = Math.round(minSav).toLocaleString('fi-FI') + ' - ' + Math.round(maxSav).toLocaleString('fi-FI');
+            paybackVal.innerText = payback.toFixed(1).replace('.', ',');
+        };
+
+        slider.addEventListener('input', () => {
+            loader.style.opacity = '1';
+            loader.style.pointerEvents = 'auto';
+
+            calculate();
+
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.pointerEvents = 'none';
+            }, 300);
+        });
+
+        // Form Logic
+        const form = document.querySelector('form');
+        const toast = document.getElementById('toast');
+        const submitBtn = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const originalText = submitBtn.innerText;
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = `
+                <div class="flex items-center gap-2">
+                    <div class="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></div>
+                    Lähetetään...
+                </div>
+            `;
+
+            setTimeout(() => {
+                submitBtn.disabled = false;
+                submitBtn.innerText = originalText;
+
+                // Show Toast
+                toast.style.opacity = '1';
+                toast.style.transform = 'translate(-50%, 0)';
+                toast.style.pointerEvents = 'auto';
+
+                form.reset();
+
+                setTimeout(() => {
+                    toast.style.opacity = '0';
+                    toast.style.transform = 'translate(-50%, 20px)';
+                    toast.style.pointerEvents = 'none';
+                }, 5000);
+            }, 1000);
+        });
+
+        // Initial Calc
+        calculate();
+
+        // Apply Clone Config
+        applyConfig();
+    </script>
+</body>
+
+</html>

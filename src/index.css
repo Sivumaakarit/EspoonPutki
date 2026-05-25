@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Plus Jakarta Sans", sans-serif;
+
+  --color-brand-blue: #0b1530;
+  --color-brand-accent: #00e5ff;
+  --color-brand-emerald: #00b8d4;
+  --color-brand-light: #f8fafc;
+  --color-emergency-red: #ef4444;
+
+  --animate-kenburns: kenburns 15s ease-out infinite alternate;
+  --animate-pulse-slow: pulse-slow 3s infinite ease-in-out;
+  --animate-glow: glow 2s infinite ease-in-out;
+
+  @keyframes kenburns {
+    0% {
+      transform: scale(1.06) translate(0, 0);
+    }
+    100% {
+      transform: scale(1.00) translate(0, 0);
+    }
+  }
+  @keyframes pulse-slow {
+    0%, 100% {
+      opacity: 0.3;
+    }
+    50% {
+      opacity: 0.8;
+    }
+  }
+  @keyframes glow {
+    0%, 100% {
+      box-shadow: 0 0 10px rgba(0, 229, 255, 0.2);
+    }
+    50% {
+      box-shadow: 0 0 25px rgba(0, 229, 255, 0.6);
+    }
+  }
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+
+  body {
+    @apply font-sans text-brand-blue bg-brand-light antialiased overflow-x-hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.glass-nav {
+  @apply bg-brand-blue/80 backdrop-blur-xl border-b border-white/10 sticky top-0 z-50 transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-brand-accent hover:bg-brand-emerald text-brand-blue font-extrabold px-8 py-4 rounded-2xl transition-all duration-300 shadow-xl shadow-brand-accent/20 hover:shadow-brand-accent/50 active:scale-95 flex items-center justify-center gap-3 cursor-pointer;
+  @apply hover:-translate-y-0.5;
+}
+
+.btn-secondary {
+  @apply bg-white/10 backdrop-blur-md border border-white/20 text-white hover:bg-white hover:text-brand-blue px-8 py-4 rounded-2xl font-bold transition-all duration-300 active:scale-95 flex items-center justify-center gap-3 cursor-pointer;
+  @apply hover:-translate-y-0.5;
+}
+
+.btn-outline {
+  @apply bg-transparent border-2 border-brand-blue text-brand-blue hover:bg-brand-blue hover:text-white px-8 py-4 rounded-2xl font-bold transition-all duration-300 active:scale-95 flex items-center justify-center gap-3 cursor-pointer;
+  @apply hover:-translate-y-0.5;
+}
+
+.section-padding {
+  @apply py-24 px-6 max-w-7xl mx-auto;
+}
+
+/* Glassmorphism Bento Card definitions */
+.bento-card-glass {
+  @apply bg-brand-blue/40 backdrop-blur-xl border border-white/10 rounded-[2rem] p-8 shadow-2xl transition-all duration-500 hover:border-brand-accent/30;
+}
+
+.card-premium {
+  @apply bg-white border border-slate-100 rounded-[2rem] p-8 shadow-sm hover:shadow-2xl hover:shadow-slate-200 transition-all duration-500 hover:-translate-y-2;
+}
+
+.text-gradient {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-400;
+}
+
+/* Timeline Flow Custom Styles */
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: 23px;
+  top: 40px;
+  bottom: -40px;
+  width: 2px;
+  background: linear-gradient(180deg, var(--color-brand-accent) 0%, rgba(255, 255, 255, 0.05) 100%);
+  @apply hidden md:block;
+}
+
+.timeline-item:last-child::before {
+  @apply !hidden;
+}
+
+/* Custom scroll offset classes */
+.scroll-mt-offset {
+  scroll-mt: 120px;
+}
