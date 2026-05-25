@@ -403,7 +403,7 @@ export default function App() {
 
               {/* Kinetic typography using Plus Jakarta Sans display font */}
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-display leading-tight mb-6">
-                Älykästä lämpöä. Kestävää talotekniikkaa. <br />
+                Älykästä lämpöä ja talotekniikkaa. <br />
                 <span className="text-brand-accent block md:inline-block relative h-14 md:h-20 min-w-[290px] md:min-w-[550px] overflow-hidden mt-1">
                   <AnimatePresence mode="wait">
                     <motion.span
